@@ -1,3 +1,5 @@
+#Help from @Pararcana
+
 alpha, ring = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), []
 
 def gen_second_dial(num):
