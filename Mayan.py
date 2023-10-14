@@ -1,6 +1,5 @@
 from datetime import date, timedelta
 
-
 def mayan(baktun, katun, tun, uinal, kin):
     total = (baktun * 144000) + (katun * 7200) + (tun * 360) + (uinal * 20) + kin
     start_value = 2018843
