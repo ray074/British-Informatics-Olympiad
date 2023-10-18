@@ -1,5 +1,3 @@
-#All from @Pararcana
-
 def check_passwords(string):
     for i in range(len(string) - 1):
         if string[i:i+1] == string[i+1:i+2]:
