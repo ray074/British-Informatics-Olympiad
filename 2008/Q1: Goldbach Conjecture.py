@@ -16,7 +16,6 @@ def find_pairs(prime_list, target):
             count += 1
     if is_prime(target / 2):
         count += 1
-    
     return count
 
 def main():
