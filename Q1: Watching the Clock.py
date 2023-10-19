@@ -11,8 +11,8 @@ def find_meeting_time(c1, c2):
         time2 += interval2
     
     str_time = str(time1.time())
-    parts = str_time.split(":")
-    hrs, mins = parts[:2]
+    time_parts = str_time.split(":")
+    hrs, mins = time_parts[:2]
     return f"{hrs}:{mins}"
             
 def main():
