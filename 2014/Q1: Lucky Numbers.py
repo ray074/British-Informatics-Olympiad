@@ -1,5 +1,5 @@
 def gen_lucky_nums():
-    lucky_nums, n = [num for num in range(10002) if num % 2 != 0], 3
+    lucky_nums, n = [num for num in range(11011) if num % 2 != 0], 3
     while n < lucky_nums[-1]:
         lucky_nums = remove(lucky_nums, n)
         i = lucky_nums.index(n)
@@ -18,7 +18,7 @@ def locate(lucky_nums, num, values = []):
         if i in lucky_nums:
             values.append(str(i))
             break
-    for j in range(num+1, 10002):
+    for j in range(num+1, 11011):
         if j in lucky_nums:
             values.append(str(j))
             break
