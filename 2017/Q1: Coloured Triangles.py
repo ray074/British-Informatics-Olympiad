@@ -6,7 +6,7 @@ def find_final_colour(str_list):
     new_list = []
     
     while len(str_list) > 1:
-        for i in range(len(str_list) -1):
+        for i in range(len(str_list) - 1):
             new_list.append(calc_colour(str_list[i], str_list[i+1]))
         str_list = new_list.copy()
         new_list.clear()
