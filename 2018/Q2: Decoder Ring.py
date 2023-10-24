@@ -9,8 +9,7 @@ def gen_second_dial(num):
         while counter > len(alpha) - 1:
             counter -= len(alpha)
         ring.append(alpha.pop(counter))
-
-        
+     
 num, string = input().split()
 gen_second_dial(int(num))
 final = []
