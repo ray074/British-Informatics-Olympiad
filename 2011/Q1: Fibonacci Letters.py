@@ -10,8 +10,7 @@ def find_fib_letter(v1, v2, n):
         v1 = v2
         v2 = rev[total]
     
-    fib_list = [rev[value] for value in fib_list]
-    return fib_list[n-1]
+    return rev[fib_list[n-1]]
     
 def main():
     v1, v2, n = input().upper().split()
