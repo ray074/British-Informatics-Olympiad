@@ -12,9 +12,9 @@ def zeckendorf_repr(fib_list, num):
         for value in fib_list:
             if value <= num:
                 num -= value
-                nums.append(value)
+                nums.append(str(value))
                 break
-    return [str(x) for x in nums]
+    return nums
 
 def main():
     num = int(input())
