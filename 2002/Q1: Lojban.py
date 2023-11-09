@@ -1,5 +1,3 @@
-#Help from @Pararcana
-
 lojban = {
 
     "pa": "1", "re": "2", "ci": "3",
