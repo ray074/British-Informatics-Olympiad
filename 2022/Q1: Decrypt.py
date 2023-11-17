@@ -1,5 +1,5 @@
 def decrypt(string):
-    alpha = {chr(65 + i): i + 1 for i in range(26)}
+    alpha = {chr(i + 65): i + 1 for i in range(26)}
     rev_alpha = {v:k for k,v in alpha.items()}
     str_list = [letter for letter in str(string)]
     final = [str_list[0]]
