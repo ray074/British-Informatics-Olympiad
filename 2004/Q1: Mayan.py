@@ -6,7 +6,7 @@ def mayan(baktun, katun, tun, uinal, kin):
     diff = total - start_value
     g = (2000, 1, 1)
     
-    gregorian_date = date(year=g[0], month=g[1], day=g[2]) + timedelta(days=diff)
+    gregorian_date = datetime(year=g[0], month=g[1], day=g[2]) + timedelta(days=diff)
     output = [str(gregorian_date.day), str(gregorian_date.month), str(gregorian_date.year)]
     return output
 
