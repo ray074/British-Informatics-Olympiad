@@ -50,7 +50,7 @@ def manipulate(Ant):
 def main():
     
     print("Welcome to the Ants Simulation")
-    print("Enter the Coordinates and Directions of the Ants like this: 5 5 T ")
+    print("Enter the Coordinates and Directions of the Ants in this form: 5 5 T ")
     print("Enter -1 to exit \n")
     
     x1, y1, d1 = (x for x in input("Enter Ant 1 Coordinates and Direction: ").split())
