@@ -24,8 +24,8 @@ def outOfBounds(x, y):
     return True
         
         
-def convert(x, y, dir):    
-    if dir == "i":
+def convert(x, y, d):    
+    if d == "i":
         return (11-y, x-1)
     return (y+1, 11-x)
 
@@ -49,7 +49,7 @@ def manipulate(Ant):
     
 def main():
     
-    print("Welcome to the Ants Simulation.")
+    print("Welcome to the Ants Simulation")
     print("Enter the Coordinates and Directions of the Ants like this: 5 5 T ")
     print("Enter -1 to exit \n")
     
@@ -72,15 +72,9 @@ def main():
             A1x, A1y = convert(Ant1.x, Ant1.y, "c")
             A2x, A2y = convert(Ant2.x, Ant2.y, "c")
             
-            if not(Ant1.removed):
-                print(A1x, A1y, Ant1.d)
-            else:
-                print("Removed")
-                
-            if not(Ant2.removed):
-                print(A2x, A2y, Ant2.d)
-            else:
-                print("Removed")
+            print(A1x, A1y, Ant1.d) if not(Ant1.removed) else print("Removed")
+            print(A2x, A2y, Ant2.d) if not(Ant2.removed) else print("Removed")
+        
         else:
             return
     
