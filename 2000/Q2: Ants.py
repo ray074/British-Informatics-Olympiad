@@ -49,7 +49,7 @@ def manipulate(board, Ant):
     
 def main():
     
-    print("Welcome to the Ants Simulation")
+    print("Welcome to the Ants Simulation.")
     print("Enter the Coordinates and Directions of the Ants like this: 5 5 T ")
     print("Enter -1 to exit \n")
     
