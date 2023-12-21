@@ -24,8 +24,8 @@ def outOfBounds(x, y):
     return True
         
         
-def convert(x, y, d):    
-    if d == "i":
+def convert(x, y, dir):    
+    if dir == "i":
         return (11-y, x-1)
     return (y+1, 11-x)
 
