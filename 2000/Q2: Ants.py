@@ -30,7 +30,7 @@ def convert(x, y, d):
     return (y+1, 11-x)
 
 
-def manipulate(Ant):
+def move(Ant):
     
     if Ant.d == "T": new_x, new_y = Ant.x - 1, Ant.y
     if Ant.d == "R": new_x, new_y = Ant.x, Ant.y + 1
@@ -63,8 +63,8 @@ def main():
         moves = int(input("\nEnter number of moves to calculate: "))
         if moves != -1:
             for _ in range(moves):
-                if not(Ant1.removed): manipulate(Ant1)
-                if not(Ant2.removed): manipulate(Ant2)
+                if not(Ant1.removed): move(Ant1)
+                if not(Ant2.removed): move(Ant2)
                 
             for row in board:
                 print(" ".join(row))
