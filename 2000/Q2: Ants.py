@@ -33,9 +33,9 @@ def convert(x, y, d):
 def manipulate(Ant):
     
     if Ant.d == "T": new_x, new_y = Ant.x - 1, Ant.y
-    elif Ant.d == "R": new_x, new_y = Ant.x, Ant.y + 1
-    elif Ant.d == "B": new_x, new_y = Ant.x + 1, Ant.y
-    elif Ant.d == "L": new_x, new_y = Ant.x, Ant.y - 1
+    if Ant.d == "R": new_x, new_y = Ant.x, Ant.y + 1
+    if Ant.d == "B": new_x, new_y = Ant.x + 1, Ant.y
+    if Ant.d == "L": new_x, new_y = Ant.x, Ant.y - 1
     
     if not(outOfBounds(new_x, new_y)):
         Ant.x, Ant.y, Ant.d = new_x, new_y, Ant.rotate(Ant.d, (new_x, new_y))
