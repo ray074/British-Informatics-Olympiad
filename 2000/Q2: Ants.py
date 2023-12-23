@@ -8,6 +8,7 @@ class Ant:
         self.removed = False
 
     
+    @staticmethod
     def rotate(self, d, new_pos):
         directions = ["L", "T", "R", "B"]
         x, y = new_pos
