@@ -1,5 +1,6 @@
 board = [["." for _ in range(10)] for _ in range(10)]
 
+
 class Entity:
     def __init__(self, x, y, d, kind):
         self.x = x
@@ -69,7 +70,15 @@ def is_obstacle(new_pos):
 
 
 def main():
-    Px, Py = (int(x) for x in input("\nEnter the Coordinates of the Pigs: ").split())
+    
+    print("""
+Welcome to the Tamworth Two Simulation
+Enter Coordinates like this: 5 6
+Enter Commands with a capital letter followed by a number. E.g. T 2 or M 4
+Note: T = Place Trees, M = Simulate Movement and X to Quit.
+    """)
+    
+    Px, Py = (int(x) for x in input("Enter the Coordinates of the Pigs: ").split())
     Fx, Fy = (int(y) for y in input("Enter the Coordinates of the Farmer: ").split())
     (Px, Py), (Fx, Fy) = (convert(Px, Py, "i"), convert(Fx, Fy, "i"))
     Pigs, Farmer, count, meeting_log = Entity(Px, Py, "T", "P"), Entity(Fx, Fy, "T", "F"), 0, []
