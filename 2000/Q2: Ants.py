@@ -9,7 +9,7 @@ class Ant:
 
     
     @staticmethod
-    def rotate(self, d, new_pos):
+    def rotate(d, new_pos):
         directions = ["L", "T", "R", "B"]
         x, y = new_pos
 
@@ -50,9 +50,12 @@ def move(Ant):
     
 def main():
     
-    print("Welcome to the Ants Simulation")
-    print("Enter the Coordinates and Directions of the Ants like this: 5 5 T ")
-    print("Enter -1 to exit \n")
+    print("""
+Welcome to the Ants Simulation
+Enter the Coordinates and Directions of the Ants like this: 5 5 T
+Note: T for Top, B for Bottom, R for Right and L for Left
+Enter -1 to exit
+    """)
     
     x1, y1, d1 = (x for x in input("Enter Ant 1 Coordinates and Direction: ").split())
     x2, y2, d2 = (y for y in input("Enter Ant 2 Coordinates and Direction: ").split())
