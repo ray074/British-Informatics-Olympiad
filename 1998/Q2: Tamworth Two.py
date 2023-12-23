@@ -1,6 +1,5 @@
 board = [["." for _ in range(10)] for _ in range(10)]
 
-
 class Entity:
     def __init__(self, x, y, d, kind):
         self.x = x
