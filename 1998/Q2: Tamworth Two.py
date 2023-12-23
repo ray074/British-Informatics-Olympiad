@@ -75,7 +75,7 @@ def main():
 Welcome to the Tamworth Two Simulation
 Enter Coordinates like this: 5 6
 Enter Commands with a capital letter followed by a number. E.g. T 2 or M 4
-Note: T = Place Trees, M = Simulate Movement and X to Quit.
+Note: T = Place Trees, M = Simulate Movement and X to Quit
     """)
     
     Px, Py = (int(x) for x in input("Enter the Coordinates of the Pigs: ").split())
