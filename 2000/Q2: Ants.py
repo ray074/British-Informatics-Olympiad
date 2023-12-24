@@ -1,5 +1,6 @@
 board = [["." for _ in range(11)] for _ in range(11)]
 
+
 class Ant:
     def __init__(self, x, y, d, removed):
         self.x = x
