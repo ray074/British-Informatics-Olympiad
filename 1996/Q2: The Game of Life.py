@@ -59,7 +59,6 @@ def print_board():
 
 
 def main():
-    
     print("""
 Welcome to the Game of Life
 Enter Generation 0 with no spaces between characters
