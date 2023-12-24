@@ -1,5 +1,6 @@
 board = [["." for _ in range(11)] for _ in range(11)]
 
+
 def play(board):
     temp_board = [["." for _ in range(11)] for _ in range(11)]
     
