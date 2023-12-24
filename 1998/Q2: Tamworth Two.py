@@ -99,7 +99,7 @@ Note: T = Place Trees, M = Simulate Movement and X to Quit
                 if meeting_log:
                     for group in meeting_log:
                         x, y = convert(group[0], group[1], "c")
-                        print(f"Farmer and pigs meet on move {group[2]} at ({x},{y})")
+                        print(f"Farmer and Pigs meet on move {group[2]} at ({x},{y})")
 
                 meeting_log.clear()
 
