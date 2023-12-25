@@ -6,7 +6,7 @@ numerals = {
     1000: 'M'
 }
 
-nums = [num for num in sorted(numerals.keys(), reverse=True)]
+nums = [num for num in sorted(numerals, reverse=True)]
 inp = int(input())
 
 romans = []
