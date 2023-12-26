@@ -26,7 +26,6 @@ def check(number, string):
         elif string[i] in number and string[i] in index_dict:
             index_dict[string[i]].append(i)
             
-    
     for letter in number:
         indexes = index_dict[letter]
         for index in indexes:
