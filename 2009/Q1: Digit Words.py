@@ -1,4 +1,4 @@
-def find_digit_letter(string):
+def find_digit_word(string):
     numbers = ["ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"]
     
     for number in numbers:
@@ -38,7 +38,7 @@ def check(number, string):
     
 def main():
     string = input("Enter Digit Word: ").upper()
-    number = find_digit_letter(string)
+    number = find_digit_word(string)
     print(convert(check(number, string))) if number != "NO" else print("NO")
     
 
