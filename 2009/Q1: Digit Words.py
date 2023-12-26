@@ -37,7 +37,7 @@ def check(number, string):
     
     
 def main():
-    string = input("Enter Digit Letter String: ").upper()
+    string = input("Enter Digit Word: ").upper()
     number = find_digit_letter(string)
     print(convert(check(number, string))) if number != "NO" else print("NO")
     
