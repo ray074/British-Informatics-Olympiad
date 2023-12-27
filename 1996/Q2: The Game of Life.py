@@ -21,8 +21,6 @@ def play(board):
     for i in range(len(board)):
         for j in range(len(board[0])):
             board[i][j] = temp_board[i][j]
-    
-    temp_board = [["." for _ in range(11)] for _ in range(11)]
 
 
 def get_neighbours(x, y):
