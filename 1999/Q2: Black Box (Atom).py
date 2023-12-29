@@ -53,7 +53,8 @@ def move(ray, box):
     
     elif ray.state == "Deflected":
         ray.state = None
-    
+
+
 def check(new_pos, ray, box):
     x, y = new_pos
     neighbours = get_neighbours(new_pos)
