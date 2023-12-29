@@ -19,7 +19,6 @@ class Ray:
                     ray.state = "Absorbed"
                     return
             
-        
         elif ray.d == "R" or ray.d == "L":
             for j in range(len(box[0])):
                 if box[ray.x][j] == "A" and (ray.x, j) in neighbours:
