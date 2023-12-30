@@ -1,4 +1,3 @@
-
 def encode_and_decode(left_grid, right_grid, word, action):
     if action == "Encode":
         if len(word) % 2 == 1: word += "X"
