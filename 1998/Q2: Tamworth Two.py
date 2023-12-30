@@ -70,7 +70,6 @@ def is_obstacle(new_pos):
 
 
 def main():
-    
     print("""
 Welcome to the Tamworth Two Simulation
 Enter Coordinates like this: 5 6
