@@ -11,9 +11,12 @@ def find_fib_letter(v1, v2, n):
         v2 = rev[total]
     
     return rev[fib_list[n-1]]
-    
+
+
 def main():
     v1, v2, n = input().upper().split()
     print(find_fib_letter(v1, v2, int(n)))
-    
-main()
+
+
+if __name__ == "__main__":
+    main()
