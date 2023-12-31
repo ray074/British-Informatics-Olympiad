@@ -8,15 +8,7 @@ def encode_and_decode(left_grid, right_grid, word, action):
         chunks.append(word[i:i+2])
    
     for block in chunks:
-        indexes = []
-       
-        for i in range(5):
-            for j in range(5):
-                if left_grid[i][j] == block[0]: indexes.append((i, j))
-
-        for i in range(5):
-            for j in range(5):
-                if right_grid[i][j] == block[1]: indexes.append((i, j))
+        indexes = [get_indexes(block[0], left_grid), get_indexes(block[1], right_grid)]
 
         if indexes[0][0] == indexes[1][0]:
             if action == "Encode":
@@ -32,6 +24,13 @@ def encode_and_decode(left_grid, right_grid, word, action):
     text = "".join(final)
     if action == "Decode" and text[-1] == "X": text = text[0:len(text)-1]
     return text
+
+
+def get_indexes(letter, grid):
+    for i in range(5):
+        for j in range(5):
+            if grid[i][j] == letter:
+                return (i, j)
 
 
 def generate_grids(words):
@@ -75,7 +74,6 @@ def print_grids(left_grid, right_grid):
     print()
     for i in range(5):
         print(f"{'  '.join(left_grid[i])} \t\t {'  '.join(right_grid[i])}")
-    print()
 
 
 def main():
