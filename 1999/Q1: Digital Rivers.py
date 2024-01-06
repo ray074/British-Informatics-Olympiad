@@ -28,4 +28,6 @@ def main():
             print(f"First meets river 9 at: {number}")
             break
 
-main()
+
+if __name__ == "__main__":
+    main()
