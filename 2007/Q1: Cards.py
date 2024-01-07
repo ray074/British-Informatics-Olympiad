@@ -1,5 +1,6 @@
 from itertools import combinations
 
+
 def calc_points(cards):
     points = 0
     for i in range(2,6):
@@ -16,8 +17,10 @@ def calc_points(cards):
                     points += 1
     return points
 
+
 def main():
     cards = input().split()
     print(calc_points([int(x) for x in cards]))
-    
+
+
 main()
