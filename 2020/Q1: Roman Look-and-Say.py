@@ -59,4 +59,5 @@ def main():
     print(i_count, v_count)
     
     
-main()
+if __name__ == "__main__":
+    main()
