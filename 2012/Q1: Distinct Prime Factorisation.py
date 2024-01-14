@@ -6,6 +6,7 @@ def is_prime(num):
             return False
     return True
 
+
 def product_of_primes(num):
     factors, total = set(), 1
     for factor in range(1, num + 1):
